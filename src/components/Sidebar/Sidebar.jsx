@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Chart as ChartJS, ArcElement, Legend } from "chart.js";
 import { Pie } from "react-chartjs-2";
 import ChartDataLabels from "chartjs-plugin-datalabels";
@@ -19,7 +19,7 @@ const data = {
 const options = {
   plugins: {
     datalabels: {
-      formatter: (value, ctx) => `${value}%`,
+      formatter: (value) => `${value}%`,
       color: "#fff",
       font: {
         size: "22px",
@@ -34,7 +34,7 @@ const Sidebar = () => {
   return (
     <div className="side-bar">
       <div
-        className="flex items-center"
+        className="tw-flex tw-items-center"
         style={{
           background:
             "linear-gradient(82.89deg, #EF4F24 34.24%, #EFCC20 102.64%)",
@@ -59,7 +59,7 @@ const Sidebar = () => {
             }}
           >
             <div
-              className="flex flex-col items-center justify-center"
+              className="tw-flex tw-flex-col tw-items-center tw-justify-center"
               style={{
                 height: 104,
                 width: 104,
@@ -72,7 +72,7 @@ const Sidebar = () => {
         </div>
 
         <div
-          className="flex justify-between w-full"
+          className="tw-flex tw-justify-between tw-w-full"
           style={{
             marginLeft: "16px",
           }}
@@ -109,16 +109,9 @@ const Sidebar = () => {
         </div>
       </div>
 
-      <div className="flex w-full" style={{ marginBottom: "4px" }}>
+      <div className="tw-grid tw-grid-cols-2 tw-gap-1 tw-w-full tw-mb-1">
         <div
-          className="flex flex-col justify-between"
-          style={{
-            background: "#EF4F24 ",
-            color: "#fff",
-            marginRight: "2px",
-            padding: "16px",
-            width: "50%",
-          }}
+          className="tw-flex tw-flex-col tw-justify-between tw-bg-primary tw-text-white tw-p-4"
         >
           <div>Total Income</div>
           <div style={{ fontSize: 22, textAlign: "center" }}>$6,400.00</div>
@@ -129,58 +122,41 @@ const Sidebar = () => {
         </div>
 
         <div
-          className="flex flex-col justify-between"
-          style={{
-            background: "#EF4F24",
-            color: "#fff",
-            padding: "16px",
-            marginLeft: "2px",
-            width: "50%",
-          }}
+          className="tw-flex tw-flex-col tw-justify-between tw-bg-primary tw-text-white tw-p-4"
         >
           <div>Total Expenses</div>
           <div style={{ fontSize: 22, textAlign: "center" }}>$2,520.00</div>
-          <div className="flex justify-between">
+          <div className="tw-flex tw-justify-between">
             <span>GST</span>
             <span>$120.24</span>
           </div>
         </div>
       </div>
 
-      <div className="flex w-full" style={{ marginBottom: "24px" }}>
+      <div className="tw-grid tw-grid-cols-2 tw-gap-1 tw-w-full tw-mb-6">
         <div
-          className="flex flex-col"
+          className="tw-flex tw-flex-col tw-justify-between tw-bg-primary tw-text-white tw-p-4"
           style={{
-            background: "#EF4F24 ",
             borderBottomLeftRadius: "4px",
-            color: "#fff",
-            marginRight: "2px",
-            padding: "16px",
-            width: "50%",
           }}
         >
-          <div className="mb-2">Profit</div>
+          <div className="tw-mb-2">Profit</div>
           <div style={{ fontSize: 22, textAlign: "center" }}>$3,800.00</div>
         </div>
 
         <div
-          className="flex flex-col justify-between"
+          className="tw-flex tw-flex-col tw-justify-between tw-bg-primary tw-text-white tw-p-4"
           style={{
-            background: "#EF4F24",
             borderBottomRightRadius: "4px",
-            color: "#fff",
-            marginLeft: "2px",
-            padding: "16px",
-            width: "50%",
           }}
         >
           <div>View Graph</div>
-          <div className="text-right">None</div>
+          <div className="tw-text-right">None</div>
         </div>
       </div>
 
       <div
-        className="flex items-center justify-center"
+        className="tw-flex tw-items-center tw-justify-center"
         style={{
           marginBottom: "32px",
         }}
@@ -190,12 +166,10 @@ const Sidebar = () => {
         </div>
       </div>
 
-      <div className="mb-6">
-        <div
-          className="flex justify-between mb-2"
-        >
-          <p className="m-0">Income</p>
-          <p className="m-0">$6,400.00</p>
+      <div className="tw-mb-6">
+        <div className="tw-flex tw-justify-between tw-mb-2">
+          <p className="tw-m-0">Income</p>
+          <p className="tw-m-0">$6,400.00</p>
         </div>
         <ProgressBar
           totalColor="#A1D0AE66"
@@ -204,12 +178,10 @@ const Sidebar = () => {
         />
       </div>
 
-      <div className="mb-6">
-        <div
-          className="flex justify-between mb-2"
-        >
-          <p className="m-0">Expenses</p>
-          <p className="m-0">$2,520.00</p>
+      <div className="tw-mb-6">
+        <div className="tw-flex tw-justify-between tw-mb-2">
+          <p className="tw-m-0">Expenses</p>
+          <p className="tw-m-0">$2,520.00</p>
         </div>
         <ProgressBar
           totalColor="#E473734F"
@@ -218,12 +190,10 @@ const Sidebar = () => {
         />
       </div>
 
-      <div className="mb-6">
-        <div
-          className="flex justify-between mb-2"
-        >
-          <p className="m-0">Balance</p>
-          <p className="m-0">$3,800.00</p>
+      <div className="tw-mb-6">
+        <div className="tw-flex tw-justify-between tw-mb-2">
+          <p className="tw-m-0">Balance</p>
+          <p className="tw-m-0">$3,800.00</p>
         </div>
         <ProgressBar
           totalColor="#AEAEAE59"
@@ -233,6 +203,6 @@ const Sidebar = () => {
       </div>
     </div>
   );
-}
+};
 
 export default React.memo(Sidebar);

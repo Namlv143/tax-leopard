@@ -1,0 +1,125 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": ["eslint:recommended", "plugin:react/recommended", "plugin:prettier/recommended"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["react", "chai-friendly"],
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "arrow-body-style": "error",
+    "arrow-parens": ["off", "as-needed"],
+    "camelcase": "off",
+    "capitalized-comments": "off",
+    "chai-friendly/no-unused-expressions": "error",
+    "comma-dangle": "off",
+    "complexity": "off",
+    "constructor-super": "error",
+    "curly": "error",
+    "dot-notation": "error",
+    "eol-last": "off",
+    "eqeqeq": ["error", "smart"],
+    "guard-for-in": "error",
+    "id-blacklist": "off",
+    "import/no-extraneous-dependencies": "off", // imports are handled by simple-import-sort/sort
+    "import/no-internal-modules": "off", // imports are handled by simple-import-sort/sort
+    "import/order": "off", // imports are handled by simple-import-sort/sort
+    "linebreak-style": "off",
+    "local-rules/named-styles": "error",
+    "max-classes-per-file": "off",
+    "max-len": "off",
+    "new-parens": "off",
+    "newline-per-chained-call": "off",
+    "no-bitwise": "error",
+    "no-caller": "error",
+    "no-cond-assign": "error",
+    "no-console": [
+      "error",
+      {
+        "allow": [
+          "warn",
+          "dir",
+          "time",
+          "timeEnd",
+          "timeLog",
+          "trace",
+          "assert",
+          "clear",
+          "count",
+          "countReset",
+          "group",
+          "groupEnd",
+          "table",
+          "debug",
+          "info",
+          "dirxml",
+          "error",
+          "groupCollapsed",
+          "Console",
+          "profile",
+          "profileEnd",
+          "timeStamp",
+          "context"
+        ]
+      }
+    ],
+    "no-debugger": "error",
+    "no-duplicate-case": "error",
+    "no-empty": "error",
+    "no-eval": "error",
+    "no-extra-bind": "error",
+    "no-extra-semi": "off",
+    "no-fallthrough": "off",
+    "no-invalid-this": "off",
+    "no-irregular-whitespace": "off",
+    "no-multiple-empty-lines": "off",
+    "no-new-func": "error",
+    "no-new-wrappers": "error",
+    "no-redeclare": "off",
+    "no-return-await": "error",
+    "no-sequences": "error",
+    "no-shadow": [
+      "off",
+      {
+        "hoist": "all"
+      }
+    ],
+    "no-sparse-arrays": "error",
+    "no-template-curly-in-string": "error",
+    "no-throw-literal": "error",
+    "no-trailing-spaces": "off",
+    "no-undef-init": "error",
+    "no-underscore-dangle": "off",
+    "no-unsafe-finally": "error",
+    "no-unused-expressions": "off",
+    "no-unused-labels": "error",
+    "no-var": "error",
+    "object-shorthand": "error",
+    "one-var": ["error", "never"],
+    "prefer-const": "error",
+    "prefer-object-spread": "error",
+    "quote-props": "off",
+    "radix": "error",
+    "simple-import-sort/sort": ["error"],
+    "sort-imports": "off", // imports are handled by simple-import-sort/sort
+    "sort-keys": "off",
+    "space-before-function-paren": "off",
+    "spaced-comment": "error",
+    "use-isnan": "error",
+    "valid-typeof": "off",
+    "no-restricted-imports": [
+      "error",
+      {
+        "paths": ["lodash"]
+      }
+    ]
+  }
+}

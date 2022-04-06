@@ -4,22 +4,22 @@ import InfoOutlinedIcon from "@mui/icons-material/InfoOutlined";
 
 const Main = () => {
   return (
-    <div className="flex flex-col">
+    <div className="tw-flex tw-flex-col">
       <div
-        className="flex items-center justify-between mb-2"
+        className="tw-flex tw-items-center tw-justify-between tw-mb-2"
         style={{
           color: "#EF4F24",
         }}
       >
-        <p className="m-0">To do</p>
+        <p className="tw-m-0">To do</p>
         <InfoOutlinedIcon color="#EF4F24" style={{ height: 20, width: 20 }} />
       </div>
 
       <Divider style={{ color: "#00000080" }} />
 
-      <div className="flex my-2">
+      <div className="tw-flex tw-my-2">
         <button
-          className="px-4 py-1"
+          className="tw-px-4 tw-py-1"
           style={{
             backgroundColor: "#fff",
             border: "0.5px solid #EF4F24",
@@ -32,14 +32,14 @@ const Main = () => {
       </div>
 
       <div
-        className="flex items-center justify-between py-2"
+        className="tw-flex tw-items-center tw-justify-between tw-py-2"
         style={{
           borderBottom: "1px solid rgba(239, 79, 36, 0.3)",
         }}
       >
-        <div className="flex items-center">
+        <div className="tw-flex tw-items-center">
           <div
-            className="flex items-center rounded-full p-1 mr-2"
+            className="tw-flex tw-items-center tw-rounded-full tw-p-1 tw-mr-2"
             style={{
               backgroundColor: "#EF4F24",
               border: "1px solid #EF4F24",
@@ -51,21 +51,21 @@ const Main = () => {
               style={{ height: 20, width: 20 }}
             />
           </div>
-          <p className="m-0">Are you registered for GST</p>
+          <p className="tw-m-0">Are you registered for GST</p>
         </div>
 
-        <p className="m-0">Show Details</p>
+        <p className="tw-m-0">Show Details</p>
       </div>
 
       <div
-        className="flex items-center justify-between py-2"
+        className="tw-flex tw-items-center tw-justify-between tw-py-2"
         style={{
           borderBottom: "1px solid rgba(239, 79, 36, 0.3)",
         }}
       >
-        <div className="flex items-center">
+        <div className="tw-flex tw-items-center">
           <div
-            className="flex items-center rounded-full p-1 mr-2"
+            className="tw-flex tw-items-center tw-rounded-full tw-p-1 tw-mr-2"
             style={{
               backgroundColor: "#EF4F24",
               border: "1px solid #EF4F24",
@@ -77,21 +77,21 @@ const Main = () => {
               style={{ height: 20, width: 20 }}
             />
           </div>
-          <p className="m-0">BAS Lodgement</p>
+          <p className="tw-m-0">BAS Lodgement</p>
         </div>
 
-        <p className="m-0">Show Details</p>
+        <p className="tw-m-0">Show Details</p>
       </div>
 
       <div
-        className="flex items-center justify-between py-2"
+        className="tw-flex tw-items-center tw-justify-between tw-py-2"
         style={{
           borderBottom: "1px solid rgba(239, 79, 36, 0.3)",
         }}
       >
-        <div className="flex items-center">
+        <div className="tw-flex tw-items-center">
           <div
-            className="flex items-center rounded-full rounded- p-1 mr-2"
+            className="tw-flex tw-items-center tw-rounded-full tw-p-1 tw-mr-2"
             style={{
               backgroundColor: "#EF4F24",
               border: "1px solid #EF4F24",
@@ -103,10 +103,10 @@ const Main = () => {
               style={{ height: 20, width: 20 }}
             />
           </div>
-          <p className="m-0">Tax Return Due</p>
+          <p className="tw-m-0">Tax Return Due</p>
         </div>
 
-        <p className="m-0">Show Details</p>
+        <p className="tw-m-0">Show Details</p>
       </div>
     </div>
   );

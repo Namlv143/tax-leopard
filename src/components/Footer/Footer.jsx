@@ -41,7 +41,7 @@ const Footer = () => {
 
   return (
     <div
-      className="bg-white fixed px-3 py-2 w-full md:hidden md:relative"
+      className="tw-bg-white tw-fixed tw-px-3 tw-py-2 tw-w-full tw-md:hidden tw-md:relative"
       style={{
         borderTop: "0.5px solid #00000033",
         bottom: 0,
@@ -49,11 +49,11 @@ const Footer = () => {
       }}
     >
       <div
-        className="flex items-center justify-between"
+        className="tw-flex tw-items-center tw-justify-between"
         style={{ fontSize: 10 }}
       >
         {menu.map((m) => (
-          <div className="flex items-center flex-col" key={m.id}>
+          <div className="tw-flex tw-items-center tw-flex-col" key={m.id}>
             <img
               className="mb-1"
               style={{ color: "#000" }}
@@ -68,6 +68,6 @@ const Footer = () => {
       </div>
     </div>
   );
-}
+};
 
 export default React.memo(Footer);

@@ -117,7 +117,7 @@ const Header = () => {
                   },
                 }}
               >
-                <div className="flex align-items-center justify-center text-center">
+                <div className="tw-flex tw-align-items-center tw-justify-center tw-text-center">
                   <img
                     className="mr-2"
                     src={m.icon}
@@ -144,6 +144,6 @@ const Header = () => {
       </AppBar>
     </Box>
   );
-}
+};
 
 export default React.memo(Header);

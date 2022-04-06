@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const ProgressBar = (props) => {
   const { totalColor, completeColor, completed } = props;
@@ -30,6 +31,12 @@ const ProgressBar = (props) => {
       </div>
     </div>
   );
-}
+};
 
-export default React.memo(ProgressBar)
+ProgressBar.propTypes = {
+  totalColor: PropTypes.string,
+  completeColor: PropTypes.string,
+  completed: PropTypes.number,
+};
+
+export default React.memo(ProgressBar);

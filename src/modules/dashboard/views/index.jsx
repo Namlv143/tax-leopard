@@ -12,7 +12,7 @@ const Dashboard = () => {
           paddingBottom: { xs: "80px", sm: "0" },
         }}
       >
-        <div className="px-4 md:px-6 pt-4 md:pt-6 grid grid-cols-1 sm:grid-cols-dashboard sm:gap-6">
+        <div className="tw-px-4 md:tw-px-6 tw-pt-4 md:tw-pt-6 tw-grid tw-grid-cols-1 sm:tw-grid-cols-dashboard sm:tw-gap-6">
           <Sidebar />
           <Main />
         </div>
