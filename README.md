@@ -1,6 +1,9 @@
 # tax-leopard
 
-How to run project
-cd tax-leopard
-npm install
-npm run dev
+# How to run project
+# cd tax-leopard
+# npm install
+# npm run dev
+
+# Build
+# npm run build
